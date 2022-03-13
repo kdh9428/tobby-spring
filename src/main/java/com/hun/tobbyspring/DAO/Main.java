@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-        UserDao dao = new NUserDao();
+        UserDao dao = new NUserDao(new SimpleConnectionMaker());
 
         User user = new User();
         user.setId("kdh");

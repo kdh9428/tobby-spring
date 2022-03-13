@@ -5,6 +5,10 @@ import java.sql.SQLException;
 
 public class NUserDao extends UserDao {
 
+    public NUserDao(SimpleConnectionMaker simpleConnectionMaker) {
+        super(simpleConnectionMaker);
+    }
+
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         return null;
